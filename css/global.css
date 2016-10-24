@@ -1,0 +1,861 @@
+body {
+	margin: 0;
+	font-family: arial;
+	font-size: 12px;
+	color: #000;
+}
+
+.clear{
+	clear: both;
+}
+
+.container{
+	width: 1210px;
+	margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, ol, p, h1, h2, h3, h4, h5, h6{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+/******************HEADER*********************/
+header{}
+
+.topHeader{
+    height: 37px;
+    /* padding-top: 10px; */
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+
+.HeaderleftFloat{
+    float: left;
+    margin-top: 10px;
+}
+
+.HeaderleftFloat a{
+    color: #e94545;
+}
+
+.HeaderleftFloat span{
+    margin: 0 10px;
+    background: #bcbcbc;
+    width: 1px;
+    height: 8px;
+    display: inline-block;
+}
+
+.HeaderleftFloat select{
+    margin: 0 10px 0 20px;
+}
+
+.HeaderleftFloat option{}
+
+
+
+.HeaderrightFloat{
+    float: right;
+    display: block;
+}
+
+.HeaderrightFloat span{
+	margin: 0 2px;
+	background: #bcbcbc;
+	width: 1px;
+	height: 8px;
+	display: inline-block;
+}
+
+.headerMethod{
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.headerMethod a{
+    color: red;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.headerAccountContact_container{
+    display: inline-block;
+}
+
+.headerAccount, .headerContact{
+    display: inline-block;
+    position: relative;
+    height: 28px;
+    width: 100px;
+}
+
+.headerAccount p, .headerContact p{
+    height: 34px;
+    padding-left: 10px;
+    line-height: 27px;
+    background: url("../images/unite_header.png") no-repeat 85px 0px;
+}
+
+.headerAccount:hover ul{
+    display:block;
+    border-bottom: 1px #e5e5e5 solid;
+    border-left: 1px #e5e5e5 solid;
+    border-right: 1px #e5e5e5 solid;
+}
+
+.headerAccount:hover li{
+	padding-left: 9px;
+}
+
+.headerAccount:hover p {
+	background-color:#fff;
+	border-top: 1px #e5e5e5 solid;
+	border-left: 1px #e5e5e5 solid;
+	border-right: 1px #e5e5e5 solid;
+	padding-left: 9px;
+	cursor: pointer;
+	background: url("../images/unite_header.png") no-repeat 84px -28px;
+}
+
+.headerAccount ul{
+	position: absolute;
+	width: 98px;
+	background-color: #fff;
+	display: none;
+}
+
+.headerAccount ul li{
+    height: 30px;
+    line-height: 25px;
+    padding-left: 10px;
+}
+
+.headerAccount ul li:hover{
+    background-color:#cc0001;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.headerContact{
+    display: inline-block;
+}
+
+.headerBookmark{
+    display: inline-block;
+    height: 28px;
+    width: 100px;
+}
+
+.headerBookmark p{
+    background: url("../images/ico_sc.gif") no-repeat 0px 2px;
+    padding-left: 19px;
+}
+
+
+
+.headerBanner{}
+
+.headerBanner img{
+	width: 1210px;
+	height: 120px;
+}
+
+
+.midHeader{}
+
+.logoContainer_Header{
+    float: left;
+    background: url("../images/logo.gif");
+    height: 116px;
+    width: 271px;
+}
+ 
+.logoContainer_Header h1{
+    margin-top: 72px;
+    margin-left: 80px;
+    color: #454545;
+}
+
+
+.searchLinkContainer_Header{
+    float: left;
+    width: 660px;
+    margin-top: 34px;
+    margin-left: 50px;
+}
+
+.searchbar_ContainerHeader{
+    border: 2px solid #e64545;
+    height: 36px;
+}
+
+.searchHeader_choice{
+    float: left;
+    width: 148px;
+    height: 36px;
+    padding-left: 10px;
+    background: url("../images/ico.gif") no-repeat 130px;
+}
+
+.searchHeader_choice p{
+    margin-top: 11px;
+}
+
+.searchHeader_input{
+    float: left;
+    height: 36px;
+    width: 392px;
+    border-left: 1px solid #e8e8e8;
+}
+
+.searchHeader_input input{
+    width: 393px;
+    height: 36px;
+    padding-left: 13px;
+    border: none;
+}
+
+.searchHeader_button{
+    float: left;
+    height: 36px;
+    width: 105px;
+    background-color: #e64545;
+    color: #fff;
+}
+
+.searchHeader_button p{
+    padding-left: 27px;
+    padding-top: 9px;
+    font-size: 16px;
+}
+
+.searchLower_headerLinks{
+    margin-top: 10px;
+    margin-left: 173px;
+    width: 80px;
+    border-bottom: 1px solid red;
+}
+
+.searchLower_headerLinks p{
+    color: red;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+
+.cartContainer_Header{
+    float: right;
+    margin-top: 34px;
+    width: 190px;
+    height: 40px;
+    background: url("../images/cart_btn.gif") no-repeat;
+}
+
+.cartContainer_Header p{
+    height: 27px;
+    padding-top: 13px;
+    padding-left: 60px;
+    color: #e64545;
+}
+
+/******************END_HEADER*********************/
+
+
+
+/******************UPPER_NAVIGATION*******************/
+
+.navigationContainer{
+    height: 35px;
+    border-top: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 2px solid #e64545;
+}
+
+.Categorylink_Container{
+    float: left;
+    width: 271px;
+    height: 35px;
+    background-color: #e52121;
+}
+
+.Categorylink_Container p{
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 15px;
+    line-height: 35px;
+    color: #fff;
+}
+
+.Upperlink_Container{
+    float: left;
+}
+
+.Upperlink_Container ul{
+    display: block;
+}
+
+.Upperlink_Container ul li{
+    display: inline-block;
+    line-height: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 20px;
+    border-left: 1px solid #e5e5e5;
+}
+
+.Upperlink_Container ul li:hover{
+	color:#ed1c24;
+	cursor:pointer;
+}
+
+.promo_WebBanner{
+    height: 323px;
+}
+
+.promo_WebBanner img{
+    width: 1210px;
+    height: 323px;
+}
+
+
+/****************END_UPPER_NAVIGATION*****************/
+
+
+
+/******************PROMO_CONTAINER*******************/
+.promo_upperContent{
+    margin-top: 20px;
+    padding-bottom: 50px;
+    border-bottom: 1px dashed #666;
+}
+
+.promoTitle_Container{
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.promoTitle_Container h1{
+    margin: 0;
+    /* padding-top: 14px; */
+    width: 100%;
+    border-bottom: 5px solid #e64545;
+    font-size: 36px;
+    float: left;
+}
+
+
+
+.promoLeftupper_Content{
+    float: left;
+    width: 590px;
+}
+
+.promoDisplay_Pic{
+    background-image: url("../images/promo/1.jpg");
+    height: 500px;
+    width: 590px;
+    background-position: -250px 0;
+    background-size: 170%;
+    /* background-repeat: no-repeat; */
+}
+
+.promoDisplay_Pic img{}
+
+.promoThumbDisplay_Pic{
+    margin-top: 5px;
+}
+
+.promoNav_Buttons{
+    position: relative;
+}
+
+.promoNav_Left{
+    background: url("../images/thumbbutton.png") no-repeat;
+    width: 20px;
+    height: 56px;
+    position: absolute;
+    left: 0;
+}
+
+.promoNav_Right{
+	background: url("../images/thumbbutton1.png") no-repeat;
+	width: 20px;
+	height: 56px;
+	position: absolute;
+	right: 0;
+}
+
+.promoThumbDisplay_Pic ul{
+    height: 60px;
+    width: 550px;
+    margin: 0 auto;
+}
+
+.promoThumbDisplay_Pic ul li{
+    width: 56px;
+    height: 56px;
+    margin: 0 5px;
+    display: inline-block;
+    background: burlywood;
+}
+
+
+.promoRightupper_Content{
+    float: right;
+    width: 590px;
+}
+
+.promoRightupper_Content h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.promoRightupper_Content h4{
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.promoRoomLoc{
+	/* height: 50px; */
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #666;
+}
+
+.promoFprice{
+    height: 110px;
+    padding-top: 20px;
+    border-bottom: 1px dashed #666;
+}
+
+.promoFprice h1{
+    display: inline-block;
+    font-size: 80px;
+    color: #e52121;
+}
+
+.promo_Rprice{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.promo_Rprice h3{}
+
+.promo_Rprice span{
+    color: #666;
+    text-decoration: line-through;
+    font-size: 20px;
+}
+
+
+.promoBreakdown{
+	height: 65px;
+	padding-top: 25px;
+	border-bottom: 1px dashed #666;
+}
+
+.promoBreakdown h3{
+	margin-top: 5px;
+}
+
+.promoOrig, .promoDiscount, .promoSaves{
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+
+.promoSalesEnds{
+    height: 67px;
+    padding-top: 23px;
+    border-bottom: 1px dashed #666;
+}
+
+.promoSalesEnds h2{
+    display: inline-block;
+    margin-top: 5px;
+    color: #c42525;
+    font-size: 24px;
+}
+
+.promoSalesEnds span{
+    display: inline-block;
+    margin-left: 10px;
+    color: #666;
+}
+
+.promoSelectBuy{
+    height: 87px;
+    padding-top: 23px;
+}
+
+.promoQuantity{
+    margin-left: 32px;
+    float: right;
+}
+
+.promoLocation h4{
+    /* display: inline-block; */
+    margin-right: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.promoQuantity h4{
+    margin-right: 30px;
+    font-size: 20px;
+    float: left;
+    line-height: 50px;
+    color: #333;
+    font-weight: bold;
+}
+
+.promoQuantity select{
+    display: inline-block;
+    height: 50px;
+    width: 230px;
+    clear: both;
+    padding-left: 10px;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.promoLocation{
+    float: left;
+}
+
+.promoLocation select{
+    display: inline-block;
+    width: 325px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.promoBuy{
+    height: 60px;
+    background-color: #e52121;
+}
+
+.promoBuy:hover{
+    background-color:#c42525;
+    cursor: pointer;
+}
+
+.promoBuy h1{
+    font-size: 36px;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+}
+
+
+.promoShare{
+    background: url("../images/share.jpg") no-repeat;
+    height: 60px;
+    margin-top: 20px;
+}
+
+
+.promo_contentTitle{
+	margin: 0;
+	line-height: 40px;
+	width: 270px;
+	border-bottom: 5px solid #e64545;
+	font-size: 24px;
+	color: #333;
+}
+
+/******************PROMO_MIDCONTAINER*******************/
+
+.promo_midContent, .promo_bottomContent{
+    height: auto;
+    margin-top: 10px;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed #666;
+}
+
+.promo_midleft{
+	float:left;
+    width: 590px;
+}
+
+.promo_midRight{
+	float:right;
+    width: 590px;
+}
+
+.promo_midTitle{
+    border-bottom: 3px solid #e64545;
+}
+
+.promo_midtextContent{line-height: 18px;}
+
+.promo_midtextContent p{
+    margin: 10px 0;
+}
+
+.promo_midtextContent ul{
+    list-style-image: url("../images/Promobullet.png");
+    padding-left: 27px;
+}
+
+.promo_midtextContent ul li{
+    margin: 15px 0px;
+}
+
+.promo_midtextContent ol{
+	padding-left: 27px;
+	list-style-type: decimal;
+}
+
+/******************PROMO_BOTTOMCONTAINER*******************/
+
+.promo_bottomContent p{
+    line-height: 20px;
+    margin: 10px 0;
+}
+
+.promo_bottomLeft{
+    float: left;
+    width: 795px;
+}
+
+.promo_bottomLeft h2{
+	border-bottom: 3px solid #e64545;
+	width: 200px;
+	color: #333;
+}
+
+.promo_bottomTitle{
+    border-bottom: 3px solid #e64545;
+}
+
+.promo_bottomLeft img{
+    margin: 10px 0;
+}
+
+.pBot_left{
+	float: left;
+	margin-right: 70px;
+}
+
+.prmo_left{
+	float: left;
+	width: 245px;
+	margin-right: 10px;
+}
+
+.promo_bottomLeft td{
+	font-size: 12px;
+}
+
+
+
+.promo_bottomRight{
+    float: right;
+    width: 380px;
+}
+
+
+.promo_mapLocContainer, .promo_redeemContainer, .promo_customerSupportContainer{
+    margin-bottom: 40px;
+}
+
+.promo_mapLocContainer select{
+    height: 30px;
+    width: 380px;
+    margin-top: 10px;
+}
+
+.promo_mapLocAdd{}
+
+.promo_mapLocAdd p{}
+
+.promo_mapLocMap
+
+.promo_mapLocMap img{}
+
+
+.promo_redeemContainer ol{
+    list-style-type: decimal;
+    padding-left: 12px;
+    margin: 10px 0;
+}
+
+.promo_redeemContainer ol li{
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+
+.promo_customerSupportContainer p{}
+
+.promo_customerSupportContainer span{
+    color: #c42525;
+}
+
+.promohide {
+	display: none;
+}
+
+/******************PROMO_RESERVATIONCONTAINER*******************/
+
+.promo_reservationContent{
+    height: 680px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-right: 20px;
+    background-image: url("../images/promo/01.jpg");
+}
+
+.promo_reservationContent h1{
+	color: #fff;
+	margin-top: 40px;
+}
+
+.nameCont, .emailCont, .numberCont, .branchCont, .typeRoomCont{
+    margin: 15px 0;
+    height: 35px;
+    background-color: #fff;
+}
+
+.nameCont p, .emailCont p, .numberCont p, .checkInCont p, .checkOutCont p, .paxCont p, .roomsCont p{
+    float: left;
+    line-height: 36px;
+    color: #666;
+    padding-left: 10px;
+    font-size: 10px;
+    /* font-weight: Bold; */
+}
+
+.nameCont input:focus, .emailCont input:focus, .numberCont input:focus,
+.branchCont select:focus, .typeRoomCont select:focus,
+.checkInCont input:focus, .checkOutCont input:focus,
+.paxCont input:focus, .roomsCont select:focus, .messageCont textarea:focus{
+	border: 1px solid #e52121;
+	box-shadow: 0px 0px 5px #e52121;
+}
+
+.nameCont input, .emailCont input, .numberCont input{
+    float: right;
+    height: 25px;
+    /* border: none; */
+    width: 260px;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.branchCont select, .typeRoomCont select{
+    height: 35px;
+    border: none;
+    padding-left: 7px;
+    width: 380px;
+}
+
+.checkInOutCont, .paxRoomsCont{
+    margin: 15px 0;
+}
+
+.checkInCont, .paxCont{
+    width: 180px;
+    float: left;
+    background-color: #fff;
+}
+
+.checkInCont input, .checkOutCont input{
+    float: right;
+    height: 25px;
+    /* border: none; */
+    width: 100px;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.paxCont input{
+    float: right;
+    height: 25px;
+    /* border: none; */
+    width: 70px;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.checkOutCont, .roomsCont{
+    width: 180px;
+    background-color: #fff;
+    float: right;
+}
+
+.roomsCont select{
+    height: 25px;
+    border: none;
+    float: right;
+    width: 80px;
+    margin-top: 5px;
+}
+
+.messageCont{
+    margin: 15px 0;
+}
+
+.messageCont textarea{
+    border: none;
+    height: 100px;
+    width: 380px;
+    padding: 10px;
+    font-family: arial;
+}
+
+.promo_reservationContent input[type=submit]{
+    border: none;
+    height: 35px;
+    width: 380px;
+    color: #fff;
+    background-color: #c81623;
+    padding: 0;
+}
+
+/****************END_PROMO_CONTAINER*****************/
+
+/**************PROMO_CONFIRM_CONTAINER***************/
+.promo_cfrmContainer{
+    border: 1px solid #e5e5e5;
+    border-top: 2px Solid #cc0000;
+}
+
+.promo_cfrmText{
+    text-align: center;
+    background: url(http://source.unitop.com.ph/views/youlida/skin/default/youlida/images/cart/ok.jpg) no-repeat center 40px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.promo_cfrmText h2{
+    font-size: 20px;
+    padding: 30px;
+}
+
+.promo_cfrmText p{
+    line-height: 33px;
+    color: #333;
+}
+
+.promo_cfrmText span{
+    color: #f60;
+    font-weight: bold;
+    font-size: 12px;
+}
+/*************END_PROMO_CONFIRM_CONTAINER**************/
