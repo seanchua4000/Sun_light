@@ -1,41 +1,3 @@
-<?php
-require 'core/init.php';
-if(Session::exists('form'))
-{
-	if(Input::exists())
-	{
-		if(Token::check(Input::get('token')))
-		{
-			try
-			{
-				$db = Db::getInstance();
-				$query = $db->insert('reservation', array(
-					'name' => trim(Input::get('cus_name')),
-					'email' => trim(Input::get('cus_email')),
-					'contact_number' => trim(Input::get('cus_number')),
-					'hotel_location' => trim(Input::get('res_branch')),
-					'check_in' => trim(Input::get('checkin')),
-					'check_out' => trim(Input::get('checkout')),
-					'type_room' => trim(Input::get('res_rmtype')),
-					'number_people' => trim(Input::get('cus_people')),
-					'number_room' => trim(Input::get('cus_rooms')),
-					'customer_message' => trim(Input::get('cus_message'))
-					));
-			}
-			catch(Exception $e)
-			{
-				die($e->getMessage());
-			}
-		}
-	}
-	Session::delete('form');
-}
-else
-{
-	Redirect::to('index.php');
-}
-
-?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 
@@ -159,8 +121,8 @@ else
 		<div class="promo_cfrmContainer">
 			<div class="promo_cfrmText">
 				<h2>Your reservation has been successfully submitted!</h2>
-				<p>Hello <span><?php echo Input::get('cus_name') ?></span>, your reservation will be processed within 24 hours. You will receive an email from a Sunlight Guest Hotel Inc. representative for confirmation.</p>
-				<p>Moreover, we will email you at <span><?php echo Input::get('cus_email') ?></span> or call you at <span><?php echo Input::get('cus_number') ?></span>.</p>
+				<p>Hello <span>[This is customer name]</span>, your reservation will be processed within 24 hours. You will receive an email from a Sunlight Guest Hotel Inc. representative for confirmation.</p>
+				<p>Moreover, we will email you at <span>[customer email]</span> or call you at <span>[customer phone number]</span>.</p>
 				<p>If you have any concerns, email us at unitoponlineshop@gmail.com</p>
 				<p>Thank you!</p>
 			</div>

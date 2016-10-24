@@ -1,17 +1,17 @@
 body {
-	margin: 0;
-	font-family: arial;
-	font-size: 12px;
-	color: #000;
+    margin: 0;
+    font-family: arial;
+    font-size: 12px;
+    color: #000;
 }
 
 .clear{
-	clear: both;
+    clear: both;
 }
 
 .container{
-	width: 1210px;
-	margin: 0 auto;
+    width: 1210px;
+    margin: 0 auto;
 }
 
 a{
@@ -30,7 +30,10 @@ header{}
 
 .topHeader{
     height: 37px;
-    /* padding-top: 10px; */
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 99;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -67,11 +70,11 @@ header{}
 }
 
 .HeaderrightFloat span{
-	margin: 0 2px;
-	background: #bcbcbc;
-	width: 1px;
-	height: 8px;
-	display: inline-block;
+    margin: 0 2px;
+    background: #bcbcbc;
+    width: 1px;
+    height: 8px;
+    display: inline-block;
 }
 
 .headerMethod{
@@ -111,24 +114,24 @@ header{}
 }
 
 .headerAccount:hover li{
-	padding-left: 9px;
+    padding-left: 9px;
 }
 
 .headerAccount:hover p {
-	background-color:#fff;
-	border-top: 1px #e5e5e5 solid;
-	border-left: 1px #e5e5e5 solid;
-	border-right: 1px #e5e5e5 solid;
-	padding-left: 9px;
-	cursor: pointer;
-	background: url("../images/unite_header.png") no-repeat 84px -28px;
+    background-color:#fff;
+    border-top: 1px #e5e5e5 solid;
+    border-left: 1px #e5e5e5 solid;
+    border-right: 1px #e5e5e5 solid;
+    padding-left: 9px;
+    cursor: pointer;
+    background: url("../images/unite_header.png") no-repeat 84px -28px;
 }
 
 .headerAccount ul{
-	position: absolute;
-	width: 98px;
-	background-color: #fff;
-	display: none;
+    position: absolute;
+    width: 98px;
+    background-color: #fff;
+    display: none;
 }
 
 .headerAccount ul li{
@@ -161,11 +164,13 @@ header{}
 
 
 
-.headerBanner{}
+.headerBanner{
+    padding-top: 38px;
+}
 
 .headerBanner img{
-	width: 1210px;
-	height: 120px;
+    width: 1210px;
+    height: 120px;
 }
 
 
@@ -312,8 +317,8 @@ header{}
 }
 
 .Upperlink_Container ul li:hover{
-	color:#ed1c24;
-	cursor:pointer;
+    color:#ed1c24;
+    cursor:pointer;
 }
 
 .promo_WebBanner{
@@ -386,11 +391,11 @@ header{}
 }
 
 .promoNav_Right{
-	background: url("../images/thumbbutton1.png") no-repeat;
-	width: 20px;
-	height: 56px;
-	position: absolute;
-	right: 0;
+    background: url("../images/thumbbutton1.png") no-repeat;
+    width: 20px;
+    height: 56px;
+    position: absolute;
+    right: 0;
 }
 
 .promoThumbDisplay_Pic ul{
@@ -426,9 +431,9 @@ header{}
 }
 
 .promoRoomLoc{
-	/* height: 50px; */
-	padding-bottom: 20px;
-	border-bottom: 1px dashed #666;
+    /* height: 50px; */
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #666;
 }
 
 .promoFprice{
@@ -458,13 +463,13 @@ header{}
 
 
 .promoBreakdown{
-	height: 65px;
-	padding-top: 25px;
-	border-bottom: 1px dashed #666;
+    height: 65px;
+    padding-top: 25px;
+    border-bottom: 1px dashed #666;
 }
 
 .promoBreakdown h3{
-	margin-top: 5px;
+    margin-top: 5px;
 }
 
 .promoOrig, .promoDiscount, .promoSaves{
@@ -567,12 +572,12 @@ header{}
 
 
 .promo_contentTitle{
-	margin: 0;
-	line-height: 40px;
-	width: 270px;
-	border-bottom: 5px solid #e64545;
-	font-size: 24px;
-	color: #333;
+    margin: 0;
+    line-height: 40px;
+    width: 270px;
+    border-bottom: 5px solid #e64545;
+    font-size: 24px;
+    color: #333;
 }
 
 /******************PROMO_MIDCONTAINER*******************/
@@ -585,12 +590,12 @@ header{}
 }
 
 .promo_midleft{
-	float:left;
+    float:left;
     width: 590px;
 }
 
 .promo_midRight{
-	float:right;
+    float:right;
     width: 590px;
 }
 
@@ -614,8 +619,8 @@ header{}
 }
 
 .promo_midtextContent ol{
-	padding-left: 27px;
-	list-style-type: decimal;
+    padding-left: 27px;
+    list-style-type: decimal;
 }
 
 /******************PROMO_BOTTOMCONTAINER*******************/
@@ -631,9 +636,9 @@ header{}
 }
 
 .promo_bottomLeft h2{
-	border-bottom: 3px solid #e64545;
-	width: 200px;
-	color: #333;
+    border-bottom: 3px solid #e64545;
+    width: 200px;
+    color: #333;
 }
 
 .promo_bottomTitle{
@@ -645,18 +650,18 @@ header{}
 }
 
 .pBot_left{
-	float: left;
-	margin-right: 70px;
+    float: left;
+    margin-right: 70px;
 }
 
 .prmo_left{
-	float: left;
-	width: 245px;
-	margin-right: 10px;
+    float: left;
+    width: 245px;
+    margin-right: 10px;
 }
 
 .promo_bottomLeft td{
-	font-size: 12px;
+    font-size: 12px;
 }
 
 
@@ -705,7 +710,7 @@ header{}
 }
 
 .promohide {
-	display: none;
+    display: none;
 }
 
 /******************PROMO_RESERVATIONCONTAINER*******************/
@@ -719,8 +724,8 @@ header{}
 }
 
 .promo_reservationContent h1{
-	color: #fff;
-	margin-top: 40px;
+    color: #fff;
+    margin-top: 40px;
 }
 
 .nameCont, .emailCont, .numberCont, .branchCont, .typeRoomCont{
@@ -742,8 +747,8 @@ header{}
 .branchCont select:focus, .typeRoomCont select:focus,
 .checkInCont input:focus, .checkOutCont input:focus,
 .paxCont input:focus, .roomsCont select:focus, .messageCont textarea:focus{
-	border: 1px solid #e52121;
-	box-shadow: 0px 0px 5px #e52121;
+    border: 1px solid #e52121;
+    box-shadow: 0px 0px 5px #e52121;
 }
 
 .nameCont input, .emailCont input, .numberCont input{
@@ -819,16 +824,140 @@ header{}
     font-family: arial;
 }
 
-.promo_reservationContent input[type=submit]{
+.promo_submit input{
     border: none;
     height: 35px;
     width: 380px;
     color: #fff;
     background-color: #c81623;
     padding: 0;
+    cursor: pointer;
 }
 
 /****************END_PROMO_CONTAINER*****************/
+
+/****************PROMO_CONTAINER_OVERLAY*****************/
+
+.promo_overlay{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    z-index: 1;
+}
+
+.prm_cnfrmContainer{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    background-color: #fff;
+    width: 700px;
+    margin-left: -330px;
+    padding: 15px;
+}
+
+.prm_cnfrmHeader{}
+
+.prm_cnfrmHeader h1{color: #111;font-size: 20px;font-weight: bold;}
+
+.prm_cnfrmHeader span{
+    float: right;
+    margin-right: 10px;
+    background: url("../images/ui-icons_444444_256x240.png") -100px 108px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.prm_cnfrmList_Cntnr{
+    border: 1px solid #eaeaea;
+    border-top: 3px solid #cc0000;
+    margin-top: 5px;
+}
+
+.prm_cnfrmList{
+    padding: 20px 0;
+}
+
+.prm_cnfrmLeft{
+    float: left;
+    text-align: right;
+    color: #666;
+    line-height: 40px;
+    width: 319px;
+    padding-right: 30px;
+}
+
+.prm_cnfrmRight{
+    float: right;
+    text-align: left;
+    font-weight: bold;
+    line-height: 40px;
+    width: 319px;
+}
+
+.prm_cnfrmRight>p:last-child{
+    
+line-height: 2;
+    
+margin-top: 8px;
+}
+
+.prm_cnfrmButtons_cntnr{
+    height: 59px;
+    border-top: 1px solid #eaeaea;
+    background-color: #f7f7f7;
+}
+
+.prm_cnfrmButtons_cntnr button{
+    float: left;
+    height: 40px;
+    width: 100px;
+    background-color: #898989;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px 0px 0px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+}
+
+.prm_cnfrmButtons_cntnr button:hover{
+    background-color:#333;
+}
+
+.prm_cnfrmButtons_cntnr button p{}
+
+.prm_cnfrmButtons{
+    float: right;
+}
+
+.prm_cnfrmButtons input{
+    height: 40px;
+    width: 180px;
+    background-color: #cc0000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 10px 20px 0px 00px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+}
+.prm_cnfrmButtons input:hover{
+    background-color: #ec2229;
+}
+
+/****************PROMO_CONTAINER_OVERLAY*****************/
+
+
+
 
 /**************PROMO_CONFIRM_CONTAINER***************/
 .promo_cfrmContainer{
@@ -858,4 +987,20 @@ header{}
     font-weight: bold;
     font-size: 12px;
 }
+
 /*************END_PROMO_CONFIRM_CONTAINER**************/
+
+/*SYSTEM ADMIN LOGIN*/
+
+.lgn_container{
+  width:400px;
+  height:400px;
+  position:absolute;
+  top:calc(50vh - 200px);
+  left:calc(50vw - 200px);
+  overflow:hidden;
+}
+
+.lgn_box {
+
+}
